@@ -1,28 +1,24 @@
 <?php
 /**
  * @package Hello_Obi-Wan
- * @version 0.1
+ * @version 0.2
  */
 /*
 Plugin Name: Hello Obi-Wan
 Plugin URI: http://wordpress.org/extend/plugins/hello-obi-wan/
 Description: I couldn't resist forking the Hello Darth plugin and paying tribute to Obi-Wan. When activated you will randomly see a quote from <a href="http://www.imdb.com/character/ch0000004/quotes">Obi Wan Kenobi's IMDB page</a> in the upper right of your admin screen on every page. HT to <a href="http://ma.tt">Matt Mullenberg</a> for the original code. <a href="https://wordpress.org/support/plugin/hello-obi-wan">Support and suggestions</a> are welcome. 
 Author: W. Perry Wortman | @kloptikus
-Version: 0.1
+Version: 0.3
 Author URI: http://perrywortman.com/
 */
 
 function hello_obiwan_get_quote() {
 	/** These are Obi-Wan Kenobi Quotes */
-	$quotes = "Why do I get the feeling you're going to be the death of me?
-		Your clones are very impressive. You must be very proud.
-		You don't want to sell me death sticks.
-		You want to go home and rethink your life.
-		Anakin, may the force be with you.
+	$quotes = "
 		You have made a commitment to the Jedi order, a commitment not easily broken.
 		This little one's not worth the effort. Come, let me get you something. 
 		I have something here for you. Your father wanted you to have this when you were old enough, but your uncle wouldn't allow it. He feared you might follow old Obi-Wan on some damn fool idealistic crusade like your father did. 
-		Your father's light saber. This is the weapon of a Jedi Knight. Not as clumsy or random as a blaster; an elegant weapon for a more civilized age. For over a thousand generations, the Jedi Knights were the guardians of peace and justice in the Old Republic. Before the dark times... before the Empire. 
+		This is the weapon of a Jedi Knight. Not as clumsy or random as a blaster; an elegant weapon for a more civilized age. For over a thousand generations, the Jedi Knights were the guardians of peace and justice in the Old Republic. Before the dark times... before the Empire. 
 		There was nothing you could have done, Luke, had you been there. You'd have been killed too, and the droids would now be in the hands of the Empire. 
 		Rest easy, son. You've had a busy day. You're fortunate to be all in one piece. 
 		The Jundland Wastes are not to be traveled lightly. Tell me, young Luke, what brings you out this far? 
@@ -37,12 +33,9 @@ function hello_obiwan_get_quote() {
 		That's your uncle talking. 
 		The Force is what gives a Jedi his power. It's an energy field created by all living things. It surrounds us and penetrates us. It binds the galaxy together. 
 		For over a thousand generations, the Jedi knights were the guardians of peace and justice in the old Republic... before the dark times... before the empire. 
-		Come here, my little friend. Don't be afraid. 
-		Oh don't worry, he'll be alright. 
 		A young Jedi named Darth Vader, who was a pupil of mine until he turned to evil, helped the Empire hunt down and destroy the Jedi knights. He betrayed and murdered your father. Now the Jedi are all but extinct. Vader was seduced by the dark side of the Force. 
 		Mos Eisley spaceport: You will never find a more wretched hive of scum and villainy. We must be cautious. 
 		The Force can have a strong influence on the weak-minded.
-		Yes indeed, if it's a fast ship.
 		Only passengers. Myself, the boy, two droids... and no questions asked.
 		Let's just say we'd like to avoid any Imperial entanglements.
 		Who's the more foolish? The fool, or the fool who follows him?
@@ -50,15 +43,11 @@ function hello_obiwan_get_quote() {
 		The Force will be with you, always.
 		Use the Force, Luke.
 		In my experience, there's no such thing as luck.
-		You don't need to see his identification.
-		These aren't the droids you're looking for.
-		He can go about his business.
-		Move along.
+		You don't need to see his identification. These aren't the droids you're looking for. He can go about his business. Move along.
 		I felt a great disturbance in the Force, as if millions of voices suddenly cried out in terror and were suddenly silenced. I fear something terrible has happened.
 		That's what your uncle told you. He didn't hold with your father's ideals; he felt he should've stayed here and not gotten involved.
-		 Yes. I was once a Jedi knight, the same as your father.
+		Yes. I was once a Jedi knight, the same as your father.
 		He was the best star pilot in the galaxy, and a cunning warrior. I understand that you've become quite a good pilot yourself.
-		And he was a good friend.
 		Your eyes can deceive you; don't trust them.
 		How long before you can make the jump to light speed?
 		That's good. You have taken your first step into a larger world.
@@ -99,5 +88,3 @@ function obiwan_css() {
 }
 
 add_action( 'admin_head', 'obiwan_css' );
-
-?>

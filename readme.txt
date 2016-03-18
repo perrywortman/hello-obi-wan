@@ -3,16 +3,16 @@ Contributors: kloptikus
 Tags: hello, admin area, humor, obi-wan kenobi, star wars, jedi, fun
 Author URI: http://www.perrywortman.com
 Requires at least: 2.0.2
-Tested up to: 4.3.1
-Stable tag: 0.2
+Tested up to: 4.4
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-I couldn't resist forking the Hello Darth plugin and paying tribute to Obi-Wan. 
+ 
+Not just a plugin, but a symbol of hope for an entire generation summed up famously by Obi-Wan: These are NOT the droids you're looking for. 
 
 == Description ==
 
-I couldn't resist forking the Hello Darth plugin and paying tribute to Obi-Wan. When activated you will randomly see a quote from <cite>Obi-Wan Kenobi's IMDB page</cite> in the upper right of your admin screen on every page. HT to Matt Mullenberg for the original code.
+Not just a plugin, but a symbol of hope and enthusiasm for an entire generation of Star Wars fans summed up most famously by Obi-Wan Kenobi: <q>These are not the droids you're looking for</q>. When activated you will randomly see a quote from <cite>Obi-Wan Kenobi's IMDB page</cite> in the upper right of your admin screen on every page. A tip of the hat to Matt Mullenweg for the original code.
 
 == Installation ==
 
@@ -47,6 +47,14 @@ https://wordpress.org/support/plugin/hello-obi-wan
 
 * Just getting started.
 * Added about 50 quotes.
+
+= 0.2 =
+
+* Changed some of the copy, corrected typos and added icon assets.
+
+= 0.3 =
+
+* Removed and edited some quotes.
 
 == Upgrade Notice ==
 
